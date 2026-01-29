@@ -1,0 +1,11 @@
+# Query: structura
+
+4 results - 2 files
+
+components/contact-section.tsx:
+  63:                 <p className="text-lg font-serif font-bold mb-2">VIDIT RAJ & ARCHITECTS</p>
+  86:                   href="mailto:Viditrajarchitects@gmail.com"
+  89:                   Viditrajarchitects@gmail.com
+
+components/gallery-content.tsx:
+  185:       materials: "Structural glass, anodized aluminum, steel",
