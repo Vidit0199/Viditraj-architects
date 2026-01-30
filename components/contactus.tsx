@@ -18,7 +18,7 @@ export default function ContactSection() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
 
-    const mailtoLink = `mailto:vision@structura.studio?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:viditrajarchitects@gmail.com?subject=${encodeURIComponent(
       formData.subject
     )}&body=${encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.vision}`
