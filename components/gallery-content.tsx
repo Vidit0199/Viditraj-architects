@@ -32,14 +32,19 @@ const galleryProjects = [
   },
   {
     id: "light-shadow",
-    title: "Light & Shadow Residences",
+    title: "Residentail",
     year: "2023",
     description:
       "Stacked residential volumes that celebrate the interplay of light and concrete texture. Each level is a distinct spatial experience.",
-    images: ["/brutalist-concrete-house.jpg"],
+    images: ["/1.jpg",
+      "/4.jpg",
+      "/5.jpg",
+      "/6.jpg",
+      "/3.jpg",
+    ],
     details: {
-      location: "London, UK",
-      size: "850 m²",
+      location: "Udaipur, RAJ",
+      size: "1650 sq feet",
       materials: "Reinforced concrete, timber",
       completion: "2023",
     },
@@ -50,10 +55,14 @@ const galleryProjects = [
     year: "2024",
     description:
       "A minimal office tower celebrating transparency and light.",
-    images: ["/6.png"],
+    images: ["/6.png",
+      "/7.png",
+      "/8.png",
+      "/1.png"
+    ],
     details: {
-      location: "Tokyo, Japan",
-      size: "3,500 m²",
+      location: "Jaisalmer, RAJ",
+      size: "9,500 sq feet",
       materials: "Glass, steel, limestone",
       completion: "2024",
     },
@@ -64,7 +73,7 @@ const galleryProjects = [
     year: "2024",
     description:
       "A minimal office tower celebrating transparency and light.",
-    images: ["/6.png"],
+    images: ["/render.jpg"],
     details: {
       location: "Tokyo, Japan",
       size: "3,500 m²",
@@ -74,179 +83,185 @@ const galleryProjects = [
   },
   {
     id: "glass-observation 2",
-    title: "Heritage Resort",
+    title: "Commercial GYM",
     year: "2024",
     description:
       "A minimal office tower celebrating transparency and light.",
-    images: ["/6.png"],
+    images: ["/4.png",
+      "/3.png",
+      "/2.png"
+    ],
     details: {
-      location: "Tokyo, Japan",
-      size: "3,500 m²",
-      materials: "Glass, steel, limestone",
+      location: "Udaipur, RAJ",
+      size: "5,500 m²",
+      materials: "Glass, steel ",
       completion: "2024",
     },
   },
   {
     id: "glass-observation 3",
-    title: "Heritage Resort",
+    title: "European Styled",
     year: "2024",
     description:
       "A minimal office tower celebrating transparency and light.",
-    images: ["/6.png"],
+    images: ["/2.jpg",
+      "/01.jpg",
+      "/03.jpg",
+    ],
     details: {
-      location: "Tokyo, Japan",
-      size: "3,500 m²",
+      location: "Noida, UP ",
+      size: "2,500 m²",
       materials: "Glass, steel, limestone",
       completion: "2024",
     },
   },
-  {
-    id: "glass-observation 4",
-    title: "Heritage Resort",
-    year: "2024",
-    description:
-      "A minimal office tower celebrating transparency and light.",
-    images: ["/6.png"],
-    details: {
-      location: "Tokyo, Japan",
-      size: "3,500 m²",
-      materials: "Glass, steel, limestone",
-      completion: "2024",
-    },
-  },
-    {
-    id: "glass-observation 5",
-    title: "Heritage Resort",
-    year: "2024",
-    description:
-      "A minimal office tower celebrating transparency and light.",
-    images: ["/6.png"],
-    details: {
-      location: "Tokyo, Japan",
-      size: "3,500 m²",
-      materials: "Glass, steel, limestone",
-      completion: "2024",
-    },
-  },  {
-    id: "glass-observation 6",
-    title: "Heritage Resort",
-    year: "2024",
-    description:
-      "A minimal office tower celebrating transparency and light.",
-    images: ["/6.png"],
-    details: {
-      location: "Tokyo, Japan",
-      size: "3,500 m²",
-      materials: "Glass, steel, limestone",
-      completion: "2024",
-    },
-  },  {
-    id: "glass-observation 8",
-    title: "Heritage Resort",
-    year: "2024",
-    description:
-      "A minimal office tower celebrating transparency and light.",
-    images: ["/6.png"],
-    details: {
-      location: "Tokyo, Japan",
-      size: "3,500 m²",
-      materials: "Glass, steel, limestone",
-      completion: "2024",
-    },
-  }, 
-   {
-    id: "glass-observation 7",
-    title: "Heritage Resort",
-    year: "2024",
-    description:
-      "A minimal office tower celebrating transparency and light.",
-    images: ["/6.png"],
-    details: {
-      location: "Tokyo, Japan",
-      size: "3,500 m²",
-      materials: "Glass, steel, limestone",
-      completion: "2024",
-    },
-  },
-   {
-    id: "glass-observation 9",
-    title: "Heritage Resort",
-    year: "2024",
-    description:
-      "A minimal office tower celebrating transparency and light.",
-    images: ["/6.png"],
-    details: {
-      location: "Tokyo, Japan",
-      size: "3,500 m²",
-      materials: "Glass, steel, limestone",
-      completion: "2024",
-    },
-  }, {
-    id: "glass-observation 10",
-    title: "Heritage Resort",
-    year: "2024",
-    description:
-      "A minimal office tower celebrating transparency and light.",
-    images: ["/6.png"],
-    details: {
-      location: "Tokyo, Japan",
-      size: "3,500 m²",
-      materials: "Glass, steel, limestone",
-      completion: "2024",
-    },
-  }, {
-    id: "glass-observation 11",
-    title: "Heritage Resort",
-    year: "2024",
-    description:
-      "A minimal office tower celebrating transparency and light.",
-    images: ["/6.png"],
-    details: {
-      location: "Tokyo, Japan",
-      size: "3,500 m²",
-      materials: "Glass, steel, limestone",
-      completion: "2024",
-    },
-  }, {
-    id: "glass-observation 12",
-    title: "Heritage Resort",
-    year: "2024",
-    description:
-      "A minimal office tower celebrating transparency and light.",
-    images: ["/6.png"],
-    details: {
-      location: "Tokyo, Japan",
-      size: "3,500 m²",
-      materials: "Glass, steel, limestone",
-      completion: "2024",
-    },
-  }, {
-    id: "glass-observation 13",
-    title: "Heritage Resort",
-    year: "2024",
-    description:
-      "A minimal office tower celebrating transparency and light.",
-    images: ["/6.png"],
-    details: {
-      location: "Tokyo, Japan",
-      size: "3,500 m²",
-      materials: "Glass, steel, limestone",
-      completion: "2024",
-    },
-  }, {
-    id: "glass-observation 14",
-    title: "Heritage Resort",
-    year: "2024",
-    description:
-      "A minimal office tower celebrating transparency and light.",
-    images: ["/6.png"],
-    details: {
-      location: "Tokyo, Japan",
-      size: "3,500 m²",
-      materials: "Glass, steel, limestone",
-      completion: "2024",
-    },
-  },
+  // {
+  //   id: "glass-observation 4",
+  //   title: "Heritage Resort",
+  //   year: "2024",
+  //   description:
+  //     "A minimal office tower celebrating transparency and light.",
+  //   images: ["/6.png"],
+  //   details: {
+  //     location: "Tokyo, Japan",
+  //     size: "3,500 m²",
+  //     materials: "Glass, steel, limestone",
+  //     completion: "2024",
+  //   },
+  // },
+  //   {
+  //   id: "glass-observation 5",
+  //   title: "Heritage Resort",
+  //   year: "2024",
+  //   description:
+  //     "A minimal office tower celebrating transparency and light.",
+  //   images: ["/6.png"],
+  //   details: {
+  //     location: "Tokyo, Japan",
+  //     size: "3,500 m²",
+  //     materials: "Glass, steel, limestone",
+  //     completion: "2024",
+  //   },
+  // },  {
+  //   id: "glass-observation 6",
+  //   title: "Heritage Resort",
+  //   year: "2024",
+  //   description:
+  //     "A minimal office tower celebrating transparency and light.",
+  //   images: ["/6.png"],
+  //   details: {
+  //     location: "Tokyo, Japan",
+  //     size: "3,500 m²",
+  //     materials: "Glass, steel, limestone",
+  //     completion: "2024",
+  //   },
+  // },  {
+  //   id: "glass-observation 8",
+  //   title: "Heritage Resort",
+  //   year: "2024",
+  //   description:
+  //     "A minimal office tower celebrating transparency and light.",
+  //   images: ["/6.png"],
+  //   details: {
+  //     location: "Tokyo, Japan",
+  //     size: "3,500 m²",
+  //     materials: "Glass, steel, limestone",
+  //     completion: "2024",
+  //   },
+  // }, 
+  //  {
+  //   id: "glass-observation 7",
+  //   title: "Heritage Resort",
+  //   year: "2024",
+  //   description:
+  //     "A minimal office tower celebrating transparency and light.",
+  //   images: ["/6.png"],
+  //   details: {
+  //     location: "Tokyo, Japan",
+  //     size: "3,500 m²",
+  //     materials: "Glass, steel, limestone",
+  //     completion: "2024",
+  //   },
+  // },
+  //  {
+  //   id: "glass-observation 9",
+  //   title: "Heritage Resort",
+  //   year: "2024",
+  //   description:
+  //     "A minimal office tower celebrating transparency and light.",
+  //   images: ["/6.png"],
+  //   details: {
+  //     location: "Tokyo, Japan",
+  //     size: "3,500 m²",
+  //     materials: "Glass, steel, limestone",
+  //     completion: "2024",
+  //   },
+  // }, {
+  //   id: "glass-observation 10",
+  //   title: "Heritage Resort",
+  //   year: "2024",
+  //   description:
+  //     "A minimal office tower celebrating transparency and light.",
+  //   images: ["/6.png"],
+  //   details: {
+  //     location: "Tokyo, Japan",
+  //     size: "3,500 m²",
+  //     materials: "Glass, steel, limestone",
+  //     completion: "2024",
+  //   },
+  // }, {
+  //   id: "glass-observation 11",
+  //   title: "Heritage Resort",
+  //   year: "2024",
+  //   description:
+  //     "A minimal office tower celebrating transparency and light.",
+  //   images: ["/6.png"],
+  //   details: {
+  //     location: "Tokyo, Japan",
+  //     size: "3,500 m²",
+  //     materials: "Glass, steel, limestone",
+  //     completion: "2024",
+  //   },
+  // }, {
+  //   id: "glass-observation 12",
+  //   title: "Heritage Resort",
+  //   year: "2024",
+  //   description:
+  //     "A minimal office tower celebrating transparency and light.",
+  //   images: ["/6.png"],
+  //   details: {
+  //     location: "Tokyo, Japan",
+  //     size: "3,500 m²",
+  //     materials: "Glass, steel, limestone",
+  //     completion: "2024",
+  //   },
+  // }, {
+  //   id: "glass-observation 13",
+  //   title: "Heritage Resort",
+  //   year: "2024",
+  //   description:
+  //     "A minimal office tower celebrating transparency and light.",
+  //   images: ["/6.png"],
+  //   details: {
+  //     location: "Tokyo, Japan",
+  //     size: "3,500 m²",
+  //     materials: "Glass, steel, limestone",
+  //     completion: "2024",
+  //   },
+  // }, {
+  //   id: "glass-observation 14",
+  //   title: "Heritage Resort",
+  //   year: "2024",
+  //   description:
+  //     "A minimal office tower celebrating transparency and light.",
+  //   images: ["/6.png"],
+  //   details: {
+  //     location: "Tokyo, Japan",
+  //     size: "3,500 m²",
+  //     materials: "Glass, steel, limestone",
+  //     completion: "2024",
+  //   },
+  // },
   // ADD MORE PROJECTS (UP TO 18)
 ]
 

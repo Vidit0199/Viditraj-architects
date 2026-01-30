@@ -14,7 +14,7 @@ export default function VisualBanner() {
           viewport={{ once: true }}
           className="relative aspect-21/9 w-full bg-secondary overflow-hidden"
         >
-          <Image src="/modernist-glass-architecture-interior.jpg" alt="Interior Banner" fill className="object-cover" />
+          <Image src="/2.png" alt="Interior Banner" fill className="object-cover" />
         </motion.div>
       </div>
     </section>

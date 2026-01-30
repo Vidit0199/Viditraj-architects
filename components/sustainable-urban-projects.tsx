@@ -55,7 +55,7 @@ function ProjectBanner({ project }: { project: (typeof projectBanners)[0] }) {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="absolute inset-0"
         >
-          <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" priority />
+          <Image src={project.image || "/2.png"} alt={project.title} fill className="object-cover" priority />
           {/* Overlay gradient */}
           <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors duration-700" />
         </motion.div>

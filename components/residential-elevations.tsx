@@ -22,7 +22,7 @@ const projects = [
   {
     title: "The Monolith",
     category: "Residential",
-    image: "/5.jpg",
+    image: "/1.jpg",
   },
   // {
   //   title: "The Monolith",
