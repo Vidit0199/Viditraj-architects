@@ -78,17 +78,22 @@ export default function ContactSection() {
                   Studio Address
                 </p>
                 <p className="text-lg font-serif font-bold mb-2">VIDIT RAJ & ARCHITECTS</p>
-                <p className="text-sm text-muted-foreground">
-                  Keshav Nagar, Khara Kua, Udaipur, Rajasthan 313001
-                </p>
+               <a
+  href="https://www.google.com/maps/search/?api=1&query=Shubham+Complex+Sukhadia+Circle+New+Fatehpura+Udaipur+Rajasthan"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-sm text-muted-foreground hover:underline cursor-pointer"
+>
+  2nd Floor, Sukhadia Circle, New Fatehpura, Panchwati, Udaipur, Rajasthan 313004
+</a>
               </div>
 
               <div className="relative pl-6 border-l-2 border-foreground/20 hover:border-foreground transition-colors duration-500">
                 <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground mb-3">
                   Direct Line
                 </p>
-                <a href="tel:+919087654321" className="text-lg font-bold hover:opacity-60">
-                  +91 9087654321
+                <a href="tel:+918239602323" className="text-lg font-bold hover:opacity-60">
+                  +91 82396 02323
                 </a>
                 <p className="text-xs text-muted-foreground mt-2">MON – FRI, 9AM–6PM IST</p>
               </div>
