@@ -8,7 +8,7 @@ export default function TabVisibilityTitle() {
 
     const handleVisibilityChange = () => {
       if (document.hidden) {
-        document.title = "We are already missing you"
+        document.title = "We are already missing you 🥺"
       } else {
         document.title = originalTitle
       }
