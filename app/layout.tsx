@@ -29,11 +29,11 @@ export const metadata: Metadata = {
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/icon.svg",
+        url: "/tab-logo.png",
         type: "image/svg+xml",
       },
     ],
-    apple: "/apple-icon.png",
+    apple: "/tab-logo.png",
   },
 }
 
