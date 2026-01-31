@@ -14,9 +14,9 @@ const projectBanners = [
     id: "brutalist-pavilion",
   },
   {
-    title: "Light and Shadow",
+    title: "Light & Shadow",
     year: "2023",
-    description: "Stacked volumes exploringing form",
+    description: "Stacked volumes exploring form",
     image: "/OPTION - 2 RENDER.png",
     id: "light-shadow",
   },
@@ -36,13 +36,22 @@ const projectBanners = [
   },
 ]
 
-function ProjectBanner({ project }: { project: (typeof projectBanners)[0] }) {
+function ProjectBanner({
+  project,
+}: {
+  project: (typeof projectBanners)[0]
+}) {
   const [isHovered, setIsHovered] = useState(false)
 
   return (
-    <Link href={`/gallery?project=${project.id}`}>
+    <Link
+      href={{
+        pathname: "/gallery",
+        query: { project: project.id },
+      }}
+    >
       <motion.div
-        className="relative w-full min-h-svh md:h-screen overflow-hidden group cursor-pointer"
+        className="relative w-full h-[70vh] md:h-screen overflow-hidden group cursor-pointer"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -51,60 +60,48 @@ function ProjectBanner({ project }: { project: (typeof projectBanners)[0] }) {
           initial={{ scale: 1 }}
           animate={{ scale: isHovered ? 1.05 : 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="absolute inset-0 bg-black"
+          className="absolute inset-0"
         >
           <Image
             src={project.image || "/2.png"}
             alt={project.title}
             fill
+            className="object-cover object-center"
             priority
-            className="object-contain md:object-cover"
           />
 
-          {/* Overlay gradient */}
+          {/* Overlay */}
           <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors duration-700" />
         </motion.div>
 
         {/* Content */}
-        <div className="absolute inset-0 flex flex-col justify-between p-6 sm:p-10 md:p-16">
-          <div />
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
+        <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-16 z-10">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="space-y-5"
+            className="text-xs md:text-sm uppercase tracking-[0.3em] text-white/70 mb-3"
           >
-            <div>
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: isHovered ? 1 : 0.6 }}
-                transition={{ duration: 0.4 }}
-                className="text-[10px] sm:text-xs uppercase tracking-[0.3em] text-white/70 font-sans mb-3"
-              >
-                {project.description}
-              </motion.p>
+            {project.description}
+          </motion.p>
 
-              <h3 className="text-3xl sm:text-4xl md:text-7xl font-serif font-bold text-white tracking-tighter mb-2">
-                {project.title}
-              </h3>
+          <h3 className="text-3xl md:text-7xl font-serif font-bold text-white tracking-tight mb-2">
+            {project.title}
+          </h3>
 
-              <p className="text-xs sm:text-sm md:text-base tracking-widest uppercase text-white/60 font-sans">
-                {project.year}
-              </p>
-            </div>
+          <p className="text-xs md:text-sm tracking-widest uppercase text-white/60 mb-6">
+            {project.year}
+          </p>
 
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: isHovered ? 1 : 0, x: isHovered ? 0 : -20 }}
-              transition={{ duration: 0.4 }}
-            >
-              <span className="inline-block px-6 sm:px-8 py-3 border border-white/40 text-white text-[10px] sm:text-xs uppercase tracking-[0.2em] font-sans hover:border-white hover:bg-white/5 transition-all duration-500">
-                View Project
-              </span>
-            </motion.div>
-          </motion.div>
+          <motion.span
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: isHovered ? 1 : 0, x: isHovered ? 0 : -20 }}
+            transition={{ duration: 0.4 }}
+            className="inline-block w-fit px-6 py-3 border border-white/40 text-white text-xs uppercase tracking-[0.2em] hover:border-white hover:bg-white/5 transition-all duration-500"
+          >
+            View Project
+          </motion.span>
         </div>
       </motion.div>
     </Link>
@@ -114,21 +111,20 @@ function ProjectBanner({ project }: { project: (typeof projectBanners)[0] }) {
 export default function ExtendedGallery() {
   return (
     <section className="relative bg-black">
-      {/* Section header */}
-      <div className="absolute top-24 sm:top-32 left-6 md:left-16 z-20">
+      {/* Section header - positioned absolutely over first banner */}
+      <div className="absolute top-40 left-6 md:left-16 z-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <span className="text-[10px] tracking-[0.4em] uppercase font-sans text-white/50 block mb-4">
-            Archive
-          </span>
+          <span className="text-[10px] tracking-[0.4em] uppercase font-sans text-white/50 block mb-4">Archive</span>
+        
         </motion.div>
       </div>
 
-      {/* Banners */}
+      {/* Full-screen banners stacked */}
       <div className="relative">
         {projectBanners.map((project, index) => (
           <ProjectBanner key={index} project={project} />

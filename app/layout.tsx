@@ -3,7 +3,6 @@ import type { Metadata } from "next"
 import { Playfair_Display, Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
-import TabVisibilityTitle from "@/components/tab-visibility"
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -16,7 +15,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "VIDIT RAJ & ARCHITECTS  | Minimalist Architectural Portfolio",
+  title: "VIDIT RAJ & ARCHITECTS | Minimalist Architectural Portfolio",
   description: "Brutalist and modernist architectural masterpieces.",
   generator: "v0.app",
   icons: {
@@ -48,10 +47,6 @@ export default function RootLayout({
       <body className={`${inter.variable} ${playfair.variable} font-sans antialiased bg-background text-foreground`}>
         {children}
         <Analytics />
-        <body>
-  <TabVisibilityTitle />
-  {children}
-</body>
       </body>
     </html>
   )
