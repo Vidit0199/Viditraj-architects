@@ -1,7 +1,6 @@
 "use client"
 
 import { Suspense } from "react"
-import Navbar from "@/components/navbar"
 import ScrollProgress from "@/components/scroll-progress"
 import GalleryContent from "@/components/gallery-content"
 
@@ -72,7 +71,7 @@ export default function GalleryPage() {
   return (
     <main className="relative min-h-screen bg-background">
       <ScrollProgress />
-      <Navbar />
+     
       <Suspense fallback={<Loading />}>
         <GalleryContent />
       </Suspense>
