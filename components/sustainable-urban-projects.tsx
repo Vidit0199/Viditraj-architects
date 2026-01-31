@@ -14,7 +14,7 @@ const projectBanners = [
     id: "brutalist-pavilion",
   },
   {
-    title: "Light & Shadow",
+    title: "Light and Shadow",
     year: "2023",
     description: "Stacked volumes exploringing form",
     image: "/OPTION - 2 RENDER.png",
